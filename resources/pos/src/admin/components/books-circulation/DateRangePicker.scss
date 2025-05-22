@@ -1,0 +1,73 @@
+.popover {
+    left: 18px !important;
+}
+
+.date-picker {
+  font-size: 14px;
+  width: 206px;
+
+  .list-group {
+
+    .list-group-item {
+      padding: 0.4rem 1.25rem;
+      border: unset;
+
+      &:hover {
+        cursor: pointer;
+        background: rgba(0, 198, 255, 0.4);
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+  &__child-popover {
+
+    .popover {
+      min-width: 700px;
+    }
+  }
+}
+
+.input-group {
+
+  .form-control {
+    background-color: white;
+  }
+}
+
+.react-datepicker__day--selected {
+    background-color: #00C6FF !important;
+}
+
+.react-datepicker-ignore-onclickoutside.focus-visible {
+    border: 2px solid #00C6FF !important;
+    outline: none;
+}
+
+.react-datepicker__input-container input:focus {
+    border: 2px solid #00C6FF !important;
+    outline: none;
+}
+
+    .date-picker__child-popover .popover{
+        @media (max-width: 1198px){
+        left: 0 ! important;
+        margin-left: 0 !important;
+    }
+}
+
+    .date-picker__child-popover .popover {
+        @media (max-width: 768px) {
+            min-width: 320px;
+        }
+
+        @media (max-width: 374px) {
+            min-width: 280px;
+            left: -20px !important;
+        }
+    }
+        @media (max-width: 720px) {
+            .react-datepicker-wrapper {
+                width: 86%;
+            }
+        }

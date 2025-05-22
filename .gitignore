@@ -1,0 +1,39 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+
+app/public/uploads
+build/*
+public/js/app.js
+
+
+build
+/public/js/chunks/
+/public/js/*.js
+/public/css/*.css
+
+
+/public/fonts/**/*.gz
+/public/**/*.gz
+/public/js/*.js
+/public/js/*.map

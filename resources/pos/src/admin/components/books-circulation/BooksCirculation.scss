@@ -1,0 +1,20 @@
+.books-circulation-table-row {
+    cursor: pointer;
+}
+
+.header {
+
+    &__border {
+        border-bottom: 1px solid #c8ced3;
+    }
+}
+
+.react-datepicker {
+    @media (max-width: 355px) {
+        margin-left: -55px;
+    }
+}
+
+.css-4ljt47-MenuList {
+    scroll-behavior: smooth;
+}

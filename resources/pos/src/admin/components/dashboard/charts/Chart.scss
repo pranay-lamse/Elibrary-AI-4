@@ -1,0 +1,32 @@
+.charts {
+
+    &__chart-section {
+        @media (min-width: 701px) {
+            display: flex;
+        }
+        @media (max-width: 700px){
+            column-count:unset !important;
+            -webkit-column-count: unset !important;
+        }
+    }
+
+    &__child-popover {
+
+        .popover {
+            min-width: 700px;
+        }
+    }
+
+    .custom-input-search {
+        cursor: pointer
+    }
+}
+
+.list-group {
+    cursor: pointer;
+}
+
+.bg-dark {
+    background-color: #8395fb !important;
+    border-color: #8395fb !important;
+}

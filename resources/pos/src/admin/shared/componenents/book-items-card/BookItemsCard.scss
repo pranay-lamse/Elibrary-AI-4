@@ -1,0 +1,40 @@
+@import "../../../../scss/variables";
+
+.book-items-card {
+
+    &__item-header:after {
+        content: "*";
+        color: $red;
+    }
+
+    &__format, &__language, &__publisher {
+        width: 20%;
+    }
+
+    &__responsive {
+        min-width: 150px;
+    }
+
+}
+
+.btn-outline-primary {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+    }
+}
+
+.btn-outline-primary.add-item:hover {
+    color: white !important;
+}
+
+.btn-outline-primary.add-item:active, .btn-outline-primary.add-item:focus{
+    background: none !important;
+    color: #00C6FF !important;
+    border-color: #00C6FF !important;
+}

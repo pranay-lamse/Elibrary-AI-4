@@ -1,0 +1,110 @@
+@import "../components/variables";
+@import "../base/mixin/overlay";
+
+.header {
+    background-color: $body-bg;
+    height: 70px;
+    padding: 0;
+    box-shadow: 0 0 20px rgba(173, 181, 189, 0.1);
+
+    .navbar-nav {
+        .nav-item {
+            transition: 0.3s ease;
+
+            &:first-child {
+                @media (min-width: 1200px) {
+                    margin-left: 0 !important;
+                }
+            }
+
+            &:last-child {
+                @media (min-width: 1200px) {
+                    margin-right: 0 !important;
+                }
+            }
+
+            @media (max-width: 1500px) and (min-width: 1400px){
+                margin-right: 8px !important;
+                margin-left: 8px !important;
+            }
+
+            @media (max-width: 1399px) and (min-width: 1200px) {
+                margin-right: 4px !important;
+                margin-left: 4px !important;
+            }
+
+            .nav-link {
+                color: $gray-600;
+
+                @media (max-width: 1399px) and (min-width: 1200px) {
+                    font-size: 0.781rem;
+                }
+
+                &:after {
+                    @include after-border-bottom
+                }
+            }
+
+            &:hover {
+                .nav-link {
+                    color: $gray-900;
+
+                    &:after {
+                        border-bottom-color: $cyan;
+                    }
+                }
+            }
+
+            .active.nav-link {
+                color: $gray-900;
+
+                &:after {
+                    border-bottom-color: $cyan;
+                }
+            }
+        }
+    }
+
+    .header-btn {
+        color: $gray-600;
+    }
+
+    .dropdown-toggle {
+        @media (max-width: 480px) {
+            font-size: 0;
+        }
+    }
+
+    .top-navbar {
+        @media (max-width: 1199px) {
+            transition: width, left, right, .3s;
+            position: fixed;
+            right: -265px;
+            top: 0;
+            bottom: 0;
+            width: 265px;
+            z-index: 999;
+            background: $body-bg;
+        }
+    }
+
+    .show-nav {
+        @media (max-width: 1199px) {
+            right: 0;
+        }
+    }
+}
+
+#nav-overly {
+    @media (max-width: 1199px) {
+        @include bg-overly;
+    }
+}
+
+.show-nav {
+    #nav-overly {
+        @media (max-width: 1199px) {
+            display: block;
+        }
+    }
+}

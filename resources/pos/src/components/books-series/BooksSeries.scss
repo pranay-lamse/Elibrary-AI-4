@@ -1,0 +1,24 @@
+.book-series-modal {
+    max-width: 700px;
+}
+
+.header-responsive {
+    min-width: 200px;
+}
+
+.table-responsive {
+    overflow: hidden !important;
+    @media (max-width: 560px) {
+        overflow: inherit !important;
+    }
+}
+
+.btn-outline-primary.btn-add-item:hover {
+    color: white !important;
+}
+
+.btn-outline-primary.btn-add-item:active, .btn-outline-primary.btn-add-item:focus{
+    background: none !important;
+    color: #00C6FF !important;
+    border-color: #00C6FF !important;
+}

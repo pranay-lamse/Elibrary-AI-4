@@ -1,0 +1,14 @@
+[
+    {
+        "label": "Sent",
+        "value": 1
+    },
+    {
+        "label": "Pending",
+        "value": 2
+    },
+    {
+        "label": "Approved",
+        "value": 3
+    }
+]

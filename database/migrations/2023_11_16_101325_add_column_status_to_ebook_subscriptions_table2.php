@@ -1,0 +1,28 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        if (!Schema::connection('mysql2')->hasColumn('ebook_subscriptions', 'status')) {
+            Schema::connection('mysql2')->table('ebook_subscriptions', function (Blueprint $table) {
+                $table->string("status")->after("email")->default('1');
+            });
+        }
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        //
+    }
+};
