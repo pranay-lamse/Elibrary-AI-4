@@ -154,7 +154,7 @@ export const BookItemTable2 = (props) => {
                         return (
                             <tr key={bookItem.id.toString()}>
                                 <td className={"book-item__table-book-code"}>
-                                    {bookItem.id}
+                                    {bookItem.accession_number ? bookItem.accession_number : 'Unavailable'}
                                 </td>
                                 <td className={"book-item__table-book-code"}>
                                     {bookItem.book_code}
